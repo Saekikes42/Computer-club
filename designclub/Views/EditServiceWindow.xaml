@@ -1,0 +1,27 @@
+﻿<Window x:Class="designclub.EditServiceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:designclub"
+        mc:Ignorable="d"
+        Title="Редактировать услугу" Height="400" Width="400">
+    <Grid>
+        <!-- Поля для редактирования -->
+        <TextBox x:Name="ServiceNameTextBox" Text="Название услуги" Margin="10,10,10,0" VerticalAlignment="Top" Height="30"/>
+        <TextBox x:Name="ServiceDescriptionTextBox" Text="Описание" Margin="10,50,10,0" VerticalAlignment="Top" Height="30"/>
+        <TextBox x:Name="ServiceMinutesTextBox" Text="Минуты" Margin="10,90,10,0" VerticalAlignment="Top" Height="30"/>
+        <TextBox x:Name="ServiceCostTextBox" Text="Стоимость" Margin="10,130,10,0" VerticalAlignment="Top" Height="30"/>
+
+        <ComboBox x:Name="ServiceTypeComboBox" Margin="10,170,10,0" VerticalAlignment="Top" Height="30">
+            <ComboBoxItem Content="PC" />
+            <ComboBoxItem Content="Console" />
+            <ComboBoxItem Content="VR" />
+        </ComboBox>
+
+        <!-- Кнопки -->
+        <Button x:Name="SaveButton" Content="Сохранить" Margin="10,220,10,0" VerticalAlignment="Top" Height="40" Click="SaveButton_Click"/>
+        <Button x:Name="CancelButton" Content="Отмена" Margin="10,270,10,0" VerticalAlignment="Top" Height="40" Click="CancelButton_Click"/>
+    </Grid>
+
+</Window>

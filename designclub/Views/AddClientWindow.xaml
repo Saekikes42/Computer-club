@@ -1,0 +1,47 @@
+﻿<Window x:Class="designclub.AddClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:designclub"
+        mc:Ignorable="d"
+     Title="Добавить клиента" Height="420" Width="412">
+    <Grid>
+        <StackPanel Margin="10">
+
+            <!-- ФИО -->
+            <TextBlock Text="ФИО:" Margin="0,0,0,5"/>
+            <TextBox x:Name="NameTextBox" Margin="0,0,0,10" Text=""/>
+
+            <!-- Номер телефона -->
+            <TextBlock Text="Номер телефона:" Margin="0,0,0,5"/>
+            <TextBox x:Name="PhoneTextBox" Margin="0,0,0,10" Text=""/>
+
+            <!-- Email -->
+            <TextBlock Text="Email:" Margin="0,0,0,5"/>
+            <TextBox x:Name="EmailTextBox" Margin="0,0,0,10" Text=""/>
+
+            <!-- Дата рождения -->
+            <TextBlock Text="Дата рождения:" Margin="0,0,0,5"/>
+            <DatePicker x:Name="BirthDatePicker" Margin="0,0,0,10" />
+
+            <!-- Баланс бонусов -->
+            <TextBlock Text="Баланс бонусов:" Margin="0,0,0,5"/>
+            <TextBox x:Name="BonusBalanceTextBox" Margin="0,0,0,10" Text="" />
+            <TextBlock Text="Логин" Margin="0,0,0,5"/>
+
+            <TextBox x:Name="UserClientTextBox" Margin="0,0,0,5"/>
+            <TextBlock Text="Пароль" Margin="0,0,0,5"/>
+
+            <PasswordBox x:Name="PassPasswordBox" />
+            <!-- Кнопки -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="SaveButton" Content="Сохранить" Width="190" Margin="5" Click="SaveButton_Click"/>
+                <Button x:Name="CancelButton" Content="Отменить" Width="178" Margin="5" Click="CancelButton_Click" Height="32"/>
+            </StackPanel>
+
+
+
+        </StackPanel>
+    </Grid>
+</Window>
